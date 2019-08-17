@@ -1,5 +1,5 @@
 module.exports = {
-	mongoUri: process.env.MONGO_URI || "mongodb://localhost/vue-blog",
+	mongoUri: process.env.MONGO_URI || "mongodb://localhost/greenpress",
 	jwtSecret: process.env.JWT_SECRET || "a secret phrase!!",
 	refreshTokenSecret: process.env.REFRESH_TOKEN_SECRET || "a secret 2 phrase!!",
 	authPort: process.env.AUTH_PORT || 9000,
