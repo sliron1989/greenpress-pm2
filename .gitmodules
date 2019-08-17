@@ -1,0 +1,3 @@
+[submodule "blog-front"]
+	path = blog-front
+	url = git@github.com:greenpress/blog-front.git
