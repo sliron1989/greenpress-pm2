@@ -7,7 +7,8 @@
     "install:auth": "(cd auth && npm install)",
     "install:content": "(cd content && npm install)",
     "install:front": "(cd blog-front && npm install && npm run build)",
-    "postinstall": "npm run install:auth && npm run install:content && npm run install:front",
+    "sync-modules":  "git submodule update --init --recursive",
+    "postinstall": "npm run sync-modules && npm run install:auth && npm run install:content && npm run install:front",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "pm2-runtime start pm2-dev.config.js --env development"
   },
