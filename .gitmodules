@@ -1,3 +1,9 @@
 [submodule "blog-front"]
 	path = blog-front
 	url = git@github.com:greenpress/blog-front.git
+[submodule "auth"]
+	path = auth
+	url = git@github.com:greenpress/authentication-service.git
+[submodule "content"]
+	path = content
+	url = git@github.com:greenpress/content-service.git
