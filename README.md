@@ -32,6 +32,7 @@ $ npm start
 
 
 ## Future development
+- initial data insert to databases (admin user + main menu + demo category + demo post)
 - admin panel
 - comments
 - choose and replace themes via panel
