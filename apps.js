@@ -23,6 +23,7 @@ module.exports = {
 			IP: config.authIp,
 			ROLES: 'user,editor,admin',
 			DEFAULT_ROLE: 'user',
+			PRIVILEGED_ROLES: 'admin'
 		},
 		env_production: {
 			MONGO_URI: config.mongoUri,
@@ -32,6 +33,7 @@ module.exports = {
 			IP: config.authIp,
 			ROLES: 'user,editor,admin',
 			DEFAULT_ROLE: 'user',
+			PRIVILEGED_ROLES: 'admin',
 			NODE_ENV: 'production'
 		}
 	},
