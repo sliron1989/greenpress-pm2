@@ -8,11 +8,12 @@ module.exports = {
 			script: './auth/helpers/init.js',
 			autorestart: false,
 		},
-		/*{
-			...apps.content,
-			script: './content/helpers/init.js'
-		},
 		{
+			...apps.content,
+			script: './content/helpers/init.js',
+			autorestart: false,
+		},
+		/*{
 			...apps.front,
 			script: './blog-front/helpers/init.js'
 		}*/
