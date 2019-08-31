@@ -19,6 +19,14 @@ For development and production environments.
 $ npm install
 ```
 
+
+## Initiate basic information
+This command will inject basic data in database, such as posts, menus, and admin user.
+
+```sh
+$ npm run init
+```
+
 ## Launch Dev
 ```sh
 $ npm run dev
