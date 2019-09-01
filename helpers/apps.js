@@ -21,9 +21,9 @@ module.exports = {
 			REFRESH_TOKEN_SECRET: config.refreshTokenSecret,
 			PORT: config.authPort,
 			IP: config.authIp,
-			ROLES: 'user,editor,admin',
-			DEFAULT_ROLE: 'user',
-			PRIVILEGED_ROLES: 'admin'
+			ROLES: config.roles.all,
+			DEFAULT_ROLE: config.roles.default,
+			PRIVILEGED_ROLES: config.roles.privileged
 		},
 		env_production: {
 			MONGO_URI: config.mongoUri,
@@ -31,9 +31,9 @@ module.exports = {
 			REFRESH_TOKEN_SECRET: config.refreshTokenSecret,
 			PORT: config.authPort,
 			IP: config.authIp,
-			ROLES: 'user,editor,admin',
-			DEFAULT_ROLE: 'user',
-			PRIVILEGED_ROLES: 'admin',
+			ROLES: config.roles.all,
+			DEFAULT_ROLE: config.roles.default,
+			PRIVILEGED_ROLES: config.roles.privileged,
 			NODE_ENV: 'production'
 		}
 	},
@@ -51,6 +51,7 @@ module.exports = {
 			IP: config.contentIp,
 			AUTH_SERVICE_PORT: config.authPort,
 			AUTH_SERVICE_IP: config.authIp,
+			EDITORS_ROLES: config.roles.editors,
 		},
 		env_production: {
 			MONGO_URI: config.mongoUri,
@@ -58,6 +59,7 @@ module.exports = {
 			IP: config.contentIp,
 			AUTH_SERVICE_PORT: config.authPort,
 			AUTH_SERVICE_IP: config.authIp,
+			EDITORS_ROLES: config.roles.editors,
 			NODE_ENV: 'production'
 		}
 	},
