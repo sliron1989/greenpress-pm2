@@ -1,4 +1,4 @@
-const apps = require('./apps');
+const apps = require('./helpers/apps');
 
 module.exports = {
 	apps: [

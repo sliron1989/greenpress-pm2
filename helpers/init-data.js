@@ -21,7 +21,7 @@ mongo.stdout.on('data', data => {
 function runServiceInit(service, env) {
 	console.log('run', service);
 	return new Promise(resolve => {
-		const f = fork('./' + service + '/helpers/init.js', null, {env});
+		const f = fork('../' + service + '/helpers/init.js', null, {env});
 
 		f.on('close', () => {
 			console.log(service, 'close');
