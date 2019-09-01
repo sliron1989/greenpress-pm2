@@ -10,7 +10,7 @@
   "scripts": {
     "install:auth": "(cd auth && npm install)",
     "install:content": "(cd content && npm install)",
-    "install:front": "(cd blog-front && npm install && npm run build)",
+    "install:front": "(cd blog-front && npm install)",
     "sync-modules": "node helpers/install-sub-modules.js",
     "postinstall": "npm run install:auth && npm run install:content && npm run install:front",
     "start": "pm2-runtime start ecosystem.config.js --env production",
