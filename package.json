@@ -11,8 +11,9 @@
     "install:auth": "(cd auth && npm install)",
     "install:content": "(cd content && npm install)",
     "install:front": "(cd blog-front && npm install)",
+    "install:admin": "(cd admin && npm install)",
     "sync-modules": "node helpers/install-sub-modules.js",
-    "postinstall": "npm run install:auth && npm run install:content && npm run install:front",
+    "postinstall": "npm run install:auth && npm run install:admin && npm run install:content && npm run install:front",
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "dev": "pm2-runtime start pm2-dev.config.js --env development",
     "init": "node helpers/init-data.js"

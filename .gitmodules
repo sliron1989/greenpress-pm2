@@ -7,3 +7,6 @@
 [submodule "content"]
 	path = content
 	url = git@github.com:greenpress/content-service.git
+[submodule "admin"]
+	path = admin
+	url = git@github.com:greenpress/admin-panel.git
