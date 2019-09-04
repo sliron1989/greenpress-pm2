@@ -88,11 +88,13 @@ module.exports = {
 		max_memory_restart: '1G',
 		env: {
 			PORT: config.adminPort,
-			NODE_ENV: 'development'
+			NODE_ENV: 'development',
+			BASE_URL: 'gp-admin',
 		},
 		env_production: {
 			PORT: config.adminPort,
-			NODE_ENV: 'production'
+			NODE_ENV: 'production',
+			BASE_URL: 'gp-admin',
 		}
 	}
 };
