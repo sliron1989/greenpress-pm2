@@ -78,5 +78,21 @@ module.exports = {
 			PORT: config.port,
 			NODE_ENV: 'production'
 		}
+	},
+	admin: {
+		name: 'admin',
+		script: 'cd admin && npm run serve',
+		instances: 1,
+		autorestart: true,
+		watch: false,
+		max_memory_restart: '1G',
+		env: {
+			PORT: config.adminPort,
+			NODE_ENV: 'development'
+		},
+		env_production: {
+			PORT: config.adminPort,
+			NODE_ENV: 'production'
+		}
 	}
 };

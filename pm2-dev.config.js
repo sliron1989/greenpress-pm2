@@ -5,6 +5,7 @@ module.exports = {
 		apps.db,
 		apps.auth,
 		apps.content,
+		apps.admin,
 		{
 			...apps.front,
 			script: 'cd blog-front && npm run dev'

@@ -6,6 +6,7 @@ module.exports = {
 	authIp: process.env.AUTH_IP || '127.0.0.1',
 	contentPort: process.env.CONTENT_PORT || 9001,
 	contentIp: process.env.CONTENT_IP || '127.0.0.1',
+	adminPort: process.env.ADMIN_PORT || 3001,
 	port: process.env.PORT || 3000,
 	roles: {
 		all: 'user,editor,admin',
