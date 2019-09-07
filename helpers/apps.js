@@ -90,6 +90,7 @@ module.exports = {
 			PORT: config.adminPort,
 			NODE_ENV: 'development',
 			BASE_URL: 'gp-admin',
+			VUE_APP_MAIN_APP_URL: 'http://localhost:' + config.port,
 		},
 		env_production: {
 			PORT: config.adminPort,
