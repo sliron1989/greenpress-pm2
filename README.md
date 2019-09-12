@@ -16,6 +16,7 @@ For development and production environments.
 
 ## Install
 ```sh
+$ npm run sync-modules // first time run only
 $ npm install
 ```
 
