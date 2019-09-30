@@ -96,6 +96,7 @@ module.exports = {
       MONGO_URI: config.mongoUri,
       PORT: config.assetsPort,
       IP: config.assetsIp,
+      SECRETS_TOKEN: config.secretsServiceSecret,
       INTERNAL_SECRET: config.internalServicesSecret,
       ...authServiceRef
     },
@@ -104,8 +105,8 @@ module.exports = {
       MONGO_URI: config.mongoUri,
       PORT: config.assetsPort,
       IP: config.assetsIp,
-      INTERNAL_SECRET: config.internalServicesSecret,
       SECRETS_TOKEN: config.assetsSecretsToken,
+      INTERNAL_SECRET: config.internalServicesSecret,
       ...authServiceRef
     }
   },
