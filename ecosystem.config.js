@@ -6,6 +6,7 @@ module.exports = {
 		apps.secrets,
 		apps.content,
 		apps.assets,
-		apps.front
+		apps.front,
+		apps.admin
 	],
 };

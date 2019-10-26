@@ -16,6 +16,7 @@ module.exports = {
   assetsPort: process.env.ASSETS_PORT || 9003,
   assetsIp: process.env.ASSETS_IP || localhost,
   adminPort: process.env.ADMIN_PORT || 3001,
+  adminIp: process.env.ADMIN_IP || localhost,
   port: process.env.PORT || 3000,
   roles: {
     all: 'user,editor,admin',

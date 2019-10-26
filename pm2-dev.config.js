@@ -7,7 +7,10 @@ module.exports = {
 		apps.secrets,
 		apps.content,
 		apps.assets,
-		apps.admin,
+		{
+			...apps.admin,
+			script: 'cd admin && npm run serve',
+		},
 		{
 			...apps.front,
 			script: 'cd blog-front && npm run dev'

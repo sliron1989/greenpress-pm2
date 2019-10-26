@@ -125,7 +125,7 @@ module.exports = {
   },
   admin: {
     name: 'admin',
-    script: 'cd admin && npm run serve',
+    script: 'npm start',
     ...basicHttpServiceOpts,
     env: {
       PORT: config.adminPort,
