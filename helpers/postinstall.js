@@ -1,5 +1,5 @@
 const { execSync } = require('child_process')
-const apps, { DEV } = require('./apps')
+const apps  = require('./apps')
 
 execSync('cd auth && npm install')
 execSync('cd secrets && npm install')
