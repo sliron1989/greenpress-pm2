@@ -29,7 +29,8 @@ const authServiceVariables = {
 module.exports = {
   db: {
     name: 'db',
-    script: 'mongod --dbpath ./data/db',
+    script: 'mongod',
+    args: '--dbpath ./db-data',
     instances: 1,
   },
   secrets: {
