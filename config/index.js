@@ -23,5 +23,6 @@ module.exports = {
     default: 'user',
     privileged: 'admin',
     editors: 'editor,admin'
-  }
+  },
+  frontTheme: process.env.FRONT_THEME || 'default'
 }

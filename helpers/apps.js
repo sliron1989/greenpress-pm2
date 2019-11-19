@@ -117,10 +117,12 @@ module.exports = {
     ...basicHttpServiceOpts,
     env: {
       PORT: config.port,
+      THEME: config.frontTheme,
       NODE_ENV: DEV
     },
     env_production: {
       PORT: config.port,
+      THEME: config.frontTheme,
       NODE_ENV: PROD
     }
   },
