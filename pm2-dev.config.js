@@ -1,5 +1,4 @@
 const apps = require('./helpers/apps');
-
 module.exports = {
 	apps: [
 		apps.db,
@@ -9,11 +8,13 @@ module.exports = {
 		apps.assets,
 		{
 			...apps.admin,
-			script: 'cd admin && npm run serve',
+			script: 'start.js',
+			args: `${__dirname}/admin 'npm run serve'`
 		},
 		{
 			...apps.front,
-			script: 'cd blog-front && npm run dev'
+			script: 'start.js',
+			args: `${__dirname}/blog-front 'npm run dev'`
 		}
 	]
 };
