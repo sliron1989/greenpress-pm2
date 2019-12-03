@@ -5,6 +5,7 @@ const {readFileSync} = require('fs');
 try {
 	console.log('installing sub modules');
 	execSync('git submodule update --init --recursive');
+	execSync('cd blog-front && npm install');
 	console.log('done!');
 } catch (e) {
 	console.log(e);
