@@ -1,18 +1,18 @@
 [submodule "blog-front"]
 	path = blog-front
-	url = git@github.com:greenpress/blog-front.git
+	url = https://github.com/greenpress/blog-front.git
 [submodule "auth"]
 	path = auth
-	url = git@github.com:greenpress/authentication-service.git
+	url = https://github.com/greenpress/authentication-service.git
 [submodule "content"]
 	path = content
-	url = git@github.com:greenpress/content-service.git
+	url = https://github.com/greenpress/content-service.git
 [submodule "admin"]
 	path = admin
-	url = git@github.com:greenpress/admin-panel.git
+	url = https://github.com/greenpress/admin-panel.git
 [submodule "secrets"]
 	path = secrets
-	url = git@github.com:greenpress/secrets-service.git
+	url = https://github.com/greenpress/secrets-service.git
 [submodule "assets"]
 	path = assets
-	url = git@github.com:greenpress/assets-service.git
+	url = https://github.com/greenpress/assets-service.git
